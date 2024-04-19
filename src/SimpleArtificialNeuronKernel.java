@@ -1,3 +1,4 @@
+
 import components.standard.Standard;
 
 /**
@@ -64,6 +65,13 @@ public interface SimpleArtificialNeuronKernel
      * @return A copy of the weights array.
      */
     double[] getWeights();
+
+    /**
+     * Returns the current weighted sum of inputs and bias.
+     *
+     * @return The weighted sum.
+     */
+    double getWeightedSum();
 
     /**
      * Returns the current bias of the neuron.

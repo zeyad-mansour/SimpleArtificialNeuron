@@ -1,3 +1,4 @@
+
 /**
  * Models a basic artificial neuron, a fundamental component in artificial
  * neural networks.

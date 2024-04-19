@@ -1,3 +1,4 @@
+
 /**
  * Representation: - An array of doubles (`weights`) stores the weights for each
  * input. - A separate double (`bias`) stores the neuron's bias. - A double
@@ -70,6 +71,11 @@ public class SimpleArtificialNeuron1 extends SimpleArtificialNeuronSecondary {
         double[] copy = new double[this.weights.length];
         System.arraycopy(this.weights, 0, copy, 0, this.weights.length);
         return copy;
+    }
+
+    @Override
+    public double getWeightedSum() {
+        return this.weightedSum;
     }
 
     @Override

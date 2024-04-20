@@ -4,9 +4,7 @@ This folder contains the source code for the `SimpleArtificialNeuron` component,
 
 ## Package Structure
 
-The source code is organized into the following packages:
-
-* `components.neuron`: This package contains the core interfaces and classes for the `SimpleArtificialNeuron` component.
+The source code is organized into the `components.neuron` package which contains the core interfaces and classes for the `SimpleArtificialNeuron` component.
 
 ## Key Files
 

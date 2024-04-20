@@ -1,3 +1,4 @@
+package components.neuron;
 
 import components.standard.Standard;
 

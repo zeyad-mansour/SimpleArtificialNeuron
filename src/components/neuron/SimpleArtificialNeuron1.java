@@ -1,3 +1,4 @@
+package components.neuron;
 
 /**
  * Representation: - An array of doubles (`weights`) stores the weights for each
@@ -56,7 +57,7 @@ public class SimpleArtificialNeuron1 extends SimpleArtificialNeuronSecondary {
 
     @Override
     public double applyActivationFunction() {
-        // Example: Sigmoid activation function
+        // Sigmoid activation function, but this can be changed
         return 1.0 / (1.0 + Math.exp(-this.weightedSum));
     }
 

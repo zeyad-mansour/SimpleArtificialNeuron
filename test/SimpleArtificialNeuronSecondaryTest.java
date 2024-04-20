@@ -5,34 +5,38 @@ import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Test;
 
+import components.neuron.SimpleArtificialNeuron;
+import components.neuron.SimpleArtificialNeuron1;
+
 public class SimpleArtificialNeuronSecondaryTest {
 
     private static final int NUM_INPUTS = 3;
+    private static final double DELTA = 0.0001;
 
     @Test
     public void testUpdateWeights() {
-        SimpleArtificialNeuron1 neuron = new SimpleArtificialNeuron1(
-                NUM_INPUTS);
-        double[] initialWeights = { 0.1, 0.2, 0.3 };
-        double bias = 0.5;
-        neuron.setWeights(initialWeights);
-        neuron.setBias(bias);
-
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] weights = { 0.2, 0.4, 0.6 };
+        double bias = 0.8;
         double learningRate = 0.1;
         double error = 0.5;
         double[] inputs = { 1.0, 2.0, 3.0 };
 
+        neuron.setWeights(weights);
+        neuron.setBias(bias);
+        neuron.activate(inputs); // Calculate weighted sum
         neuron.updateWeights(learningRate, error, inputs);
 
-        // Assuming you have a getWeights() method in your abstract class
-        double[] expectedWeights = { 0.15, 0.25, 0.35 };
-        assertArrayEquals(expectedWeights, neuron.getWeights(), 0.0001);
+        // First element: 0.2 + (0.1 * 0.5 * 1.0) = 0.25
+        // Second element: 0.4 + (0.1 * 0.5 * 2.0) = 0.5
+        // Third element: 0.6 + (0.1 * 0.5 * 3.0) = 0.75
+        double[] expectedWeights = { 0.25, 0.5, 0.75 }; // Updated weights
+        assertArrayEquals(expectedWeights, neuron.getWeights(), DELTA);
     }
 
     @Test
     public void testToString() {
-        SimpleArtificialNeuron1 neuron = new SimpleArtificialNeuron1(
-                NUM_INPUTS);
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
         double[] weights = { 0.2, 0.4, 0.6 };
         double bias = 0.8;
         neuron.setWeights(weights);
@@ -46,7 +50,7 @@ public class SimpleArtificialNeuronSecondaryTest {
     public void testEquals() {
         SimpleArtificialNeuron1 neuron1 = new SimpleArtificialNeuron1(
                 NUM_INPUTS);
-        SimpleArtificialNeuron1 neuron2 = new SimpleArtificialNeuron1(
+        SimpleArtificialNeuron neuron2 = new SimpleArtificialNeuron1(
                 NUM_INPUTS);
 
         double[] weights1 = { 0.1, 0.2, 0.3 };

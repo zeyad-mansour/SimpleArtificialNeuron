@@ -1,3 +1,4 @@
+package components.neuron;
 
 /**
  * Abstract class implementing {@code SimpleArtificialNeuron} by extending

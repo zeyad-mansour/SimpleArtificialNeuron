@@ -17,10 +17,6 @@ The source code is organized into the `components.neuron` package which contains
 
 See the `SimpleArtificialNeuronDemo.java` file in this folder for an example of how to use the `SimpleArtificialNeuron` component.
 
-## Contributing
-
-Contributions to this project are welcome. Please refer to the [CONTRIBUTING.md](../CONTRIBUTING.md) file for guidelines.
-
 ## License
 
 This project is licensed under the [MIT License](../LICENSE).

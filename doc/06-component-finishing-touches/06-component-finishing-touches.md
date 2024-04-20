@@ -146,18 +146,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Building SimpleArtificialNeuron defintely enhanced my understanding of software development. It bridged the gap between theoretical knowledge and practical application, making me realize a fuller picture of the development lifecycle from design to debugging.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+The project revealed gaps in my object-oriented programming (OOP) and debugging skills. I had to better learn some OOP principles to understand how my component fit together.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Completing the project didn't affect my passion for software development much. I have completed several independent programming projects before this, but the task of building SimpleArtificialNeuron was still rewarding, especially realizing the larger practical application of my basic component.
 
 ### Personal Growth
 
@@ -167,25 +167,28 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Beyond software skills, I developed my problem-solving abilities, learning to break down issues into manageable pieces. My research skills were also honed as I gathered information and evaluated various approaches. The project improved my time management, organization, and self-directed learning skills as I took initiative to identify and address knowledge gaps.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Problem-Solving: Analytical approach to dissecting and resolving complex problems effectively.
+- Research: Adept at gathering, evaluating, and synthesizing information from diverse sources.
+- Object-Oriented Programming (OOP): Strong understanding and practical application of OOP principles.
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+This project deepened my interest in AI and its applications. Building SimpleArtificialNeuron provided a foundational understanding of neural networks, sparking my curiosity to explore more advanced AI concepts.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I plan to take advanced courses, contribute to open-source projects, and seek mentorship from professors and researchers. Specifically, I can talk to my brother, who has a masters degree in CS and works on ML at a tech company. His guidance will invaluable as I navigate my career path.
+
 
 ## Assignment Tasks
 

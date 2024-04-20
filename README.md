@@ -26,7 +26,7 @@ This project implements a basic artificial neuron component, a fundamental build
 
 ## Usage
 
-See the `SimpleArtificialNeuronDemo.java` file in the `src` folder for an example of how to use the `SimpleArtificialNeuron` component.
+See the `SimpleArtificialNeuronDemo.java` file in the `src` folder for an example of how to use the this component.
 
 ## Future Improvements
 

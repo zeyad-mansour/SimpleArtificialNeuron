@@ -1,7 +1,23 @@
 import components.neuron.SimpleArtificialNeuron;
 import components.neuron.SimpleArtificialNeuron1;
 
-public class SimpleArtificialNeuronDemo {
+/**
+ * Demonstrates the basic usage of the {@code SimpleArtificialNeuron} component.
+ * This demo showcases how to create a neuron, set its weights and bias,
+ * activate it with input values, and obtain the output. It also includes an
+ * example of updating the neuron's weights based on a learning rate and error
+ * signal.
+ *
+ * @author Zeyad Mansour
+ */
+public class SimpleArtificialNeuronDemo1 {
+
+    /**
+     * Main method for running the demonstration.
+     *
+     * @param args
+     *            Command-line arguments (not used in this demo)
+     */
     public static void main(String[] args) {
         // Create a SimpleArtificialNeuron with 3 inputs
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(3);

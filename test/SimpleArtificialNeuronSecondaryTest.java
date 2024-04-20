@@ -35,6 +35,36 @@ public class SimpleArtificialNeuronSecondaryTest {
     }
 
     @Test
+    public void testUpdateWeightsWithZeroLearningRate() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] initialWeights = { 0.2, 0.4, 0.6 };
+        neuron.setWeights(initialWeights);
+
+        double learningRate = 0.0;
+        double error = 0.5;
+        double[] inputs = { 1.0, 2.0, 3.0 };
+
+        neuron.updateWeights(learningRate, error, inputs);
+
+        assertArrayEquals(initialWeights, neuron.getWeights(), DELTA); // Weights should remain unchanged
+    }
+
+    @Test
+    public void testUpdateWeightsWithZeroError() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] initialWeights = { 0.2, 0.4, 0.6 };
+        neuron.setWeights(initialWeights);
+
+        double learningRate = 0.1;
+        double error = 0.0;
+        double[] inputs = { 1.0, 2.0, 3.0 };
+
+        neuron.updateWeights(learningRate, error, inputs);
+
+        assertArrayEquals(initialWeights, neuron.getWeights(), DELTA); // Weights should remain unchanged
+    }
+
+    @Test
     public void testToString() {
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
         double[] weights = { 0.2, 0.4, 0.6 };
@@ -68,5 +98,13 @@ public class SimpleArtificialNeuronSecondaryTest {
         // Modify one of the neurons
         neuron2.setBias(0.5);
         assertNotEquals(neuron1, neuron2); // Different bias
+    }
+
+    @Test
+    public void testEqualsWithDifferentNumberOfInputs() {
+        SimpleArtificialNeuron neuron1 = new SimpleArtificialNeuron1(2); // 2 inputs
+        SimpleArtificialNeuron neuron2 = new SimpleArtificialNeuron1(3); // 3 inputs
+
+        assertNotEquals(neuron1, neuron2);
     }
 }

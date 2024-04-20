@@ -29,9 +29,48 @@ public class SimpleArtificialNeuron1Test {
     }
 
     @Test
+    public void testActivateWithZeroWeightsAndBias() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] weights = { 0.0, 0.0, 0.0 };
+        double bias = 0.0;
+        double[] inputs = { 1.0, 2.0, 3.0 };
+
+        neuron.setWeights(weights);
+        neuron.setBias(bias);
+        neuron.activate(inputs);
+
+        double expectedWeightedSum = 0.0;
+        assertEquals(expectedWeightedSum, neuron.getWeightedSum(), DELTA);
+    }
+
+    @Test
+    public void testActivateWithNegativeWeightsAndBias() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] weights = { -0.1, -0.2, -0.3 };
+        double bias = -0.5;
+        double[] inputs = { 1.0, 2.0, 3.0 };
+
+        neuron.setWeights(weights);
+        neuron.setBias(bias);
+        neuron.activate(inputs);
+
+        double expectedWeightedSum = -1.9; // (1*-0.1) + (2*-0.2) + (3*-0.3) + -0.5 = -1.9
+        assertEquals(expectedWeightedSum, neuron.getWeightedSum(), DELTA);
+    }
+
+    @Test
     public void testSetWeights() {
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
         double[] weights = { 0.5, 0.6, 0.7 };
+        neuron.setWeights(weights);
+
+        assertArrayEquals(weights, neuron.getWeights(), DELTA);
+    }
+
+    @Test
+    public void testSetWeightsWithEmptyArray() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(0); // 0 inputs
+        double[] weights = {};
         neuron.setWeights(weights);
 
         assertArrayEquals(weights, neuron.getWeights(), DELTA);
@@ -73,8 +112,34 @@ public class SimpleArtificialNeuron1Test {
     }
 
     @Test
+    public void testApplyActivationFunctionWithDifferentWeightedSums() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+
+        // Test with a positive weighted sum
+        neuron.activate(new double[] { 1.0, 2.0, 3.0 });
+        double output1 = neuron.applyActivationFunction();
+        // Assert output is between 0 and 1 (assuming sigmoid)
+
+        // Test with a negative weighted sum
+        neuron.activate(new double[] { -1.0, -2.0, -3.0 });
+        double output2 = neuron.applyActivationFunction();
+        // Assert output is between 0 and 1 (assuming sigmoid)
+
+        // Test with a weighted sum of 0
+        neuron.activate(new double[] { 0.0, 0.0, 0.0 });
+        double output3 = neuron.applyActivationFunction();
+        assertEquals(0.5, output3, DELTA); // Sigmoid output for 0 input
+    }
+
+    @Test
     public void testNumberOfInputs() {
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
         assertEquals(NUM_INPUTS, neuron.numberOfInputs());
+    }
+
+    @Test
+    public void testNumberOfInputsEmpty() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(0);
+        assertEquals(0, neuron.numberOfInputs());
     }
 }

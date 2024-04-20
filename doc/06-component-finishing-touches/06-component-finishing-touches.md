@@ -55,42 +55,42 @@ a quick overview of what you need to do to get the assignment done as follows:
 
 ### Getting Started Tasks
 
-- [ ] I have added my name to the top of this document
-- [ ] I have added my dot number to the top of this document
-- [ ] I have added the due date to the top of this document
-- [ ] I have read the assignment overview in the "Assignment Overview" section
-- [ ] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
-- [ ] I have read the assignment rubric in the "Assignment Rubric" section
-- [ ] I have read this checklist
+- [x] I have added my name to the top of this document
+- [x] I have added my dot number to the top of this document
+- [x] I have added the due date to the top of this document
+- [x] I have read the assignment overview in the "Assignment Overview" section
+- [x] I have read the assignment learning objectives in the "Assignment Learning Objectives" section
+- [x] I have read the assignment rubric in the "Assignment Rubric" section
+- [x] I have read this checklist
 
 ### Ongoing Tasks
 
-- [ ] I have shared my reflection in the "Pre-Assignment" section
-- [ ] I have created a test file for my kernel implementation
-  - [ ] I have created a new Java file in `test`
-  - [ ] I have exhaustively tested all of the kernel methods
-  - [ ] I am aware that I cannot test my component against a reference implementation
-- [ ] I have created a test file for my abstract class
-  - [ ] I have created a new Java file in `test`
-  - [ ] I have exhaustively tested all of the secondary methods
-  - [ ] I am aware that I cannot test my component against a reference implementation
-- [ ] I have create a code sample demonstrating a use case of my component
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have imported and used my component in this file
-- [ ] I have create another qualitatively different code sample demonstrating a use case of my component
-  - [ ] I have created a new Java file in `src`
-  - [ ] I have imported and used my component in this file
-- [ ] I have published my project to an open-source remote repository
-  - [ ] I have ensured that my repository is public
-  - [ ] I know the project url (e.g., https://github.com/TheRenegadeCoder/sample-programs)
+- [x] I have shared my reflection in the "Pre-Assignment" section
+- [x] I have created a test file for my kernel implementation
+  - [x] I have created a new Java file in `test`
+  - [x] I have exhaustively tested all of the kernel methods
+  - [x] I am aware that I cannot test my component against a reference implementation
+- [x] I have created a test file for my abstract class
+  - [x] I have created a new Java file in `test`
+  - [x] I have exhaustively tested all of the secondary methods
+  - [x] I am aware that I cannot test my component against a reference implementation
+- [x] I have create a code sample demonstrating a use case of my component
+  - [x] I have created a new Java file in `src`
+  - [x] I have imported and used my component in this file
+- [x] I have create another qualitatively different code sample demonstrating a use case of my component
+  - [x] I have created a new Java file in `src`
+  - [x] I have imported and used my component in this file
+- [x] I have published my project to an open-source remote repository
+  - [x] I have ensured that my repository is public
+  - [x] I know the project url (e.g., https://github.com/TheRenegadeCoder/sample-programs)
 
 ### Submission Tasks
 
-- [ ] I have shared assignment feedback in the "Assignment Feedback" section
-- [ ] I have converted this document to a PDF
-- [ ] I compressed my project to a `.zip` file
-- [ ] I am prepared to submit the PDF, the zip, and the link to the remote repo to Carmen
-- [ ] I am prepared to give my peers feedback on their ideas
+- [x] I have shared assignment feedback in the "Assignment Feedback" section
+- [x] I have converted this document to a PDF
+- [x] I compressed my project to a `.zip` file
+- [x] I am prepared to submit the PDF, the zip, and the link to the remote repo to Carmen
+- [x] I am prepared to give my peers feedback on their ideas
 
 ## Assignment Learning Objectives
 

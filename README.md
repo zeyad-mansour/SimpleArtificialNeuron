@@ -12,7 +12,7 @@ This project implements a basic artificial neuron component, a fundamental build
 
 **Using Eclipse:**
 
-1.  **Download the latest release:** Go to the [Releases](https://github.com/your-username/SimpleArtificialNeuron/releases) page of the repository and download the latest ZIP file. 
+1.  **Download the latest release:** Go to the [Releases](https://github.com/zeyad-mansour/SimpleArtificialNeuron/releases) page of the repository and download the latest ZIP file. 
 
 2.  **Import the project into Eclipse:**
     *   Open Eclipse and go to **File > Import...**

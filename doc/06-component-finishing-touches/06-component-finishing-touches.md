@@ -157,7 +157,7 @@ The project revealed gaps in my object-oriented programming (OOP) and debugging 
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-Completing the project didn't affect my passion for software development much. I have completed several independent programming projects before this, but the task of building SimpleArtificialNeuron was still rewarding, especially realizing the larger practical application of my basic component.
+Completing the project didn't affect my passion for software development much. I've completed several independent programming projects before this, but the task of building SimpleArtificialNeuron was still rewarding, especially realizing the larger practical application of my basic component.
 
 ### Personal Growth
 
@@ -187,7 +187,7 @@ This project deepened my interest in AI and its applications. Building SimpleArt
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-I plan to take advanced courses, contribute to open-source projects, and seek mentorship from professors and researchers. Specifically, I can talk to my brother, who has a masters degree in CS and works on ML at a tech company. His guidance will invaluable as I navigate my career path.
+I plan to take advanced courses, contribute to open-source projects, and seek mentorship from professors and researchers. Specifically, I can also talk to my brother to help me navigate my career path.
 
 
 ## Assignment Tasks

@@ -13,6 +13,9 @@ public class SimpleArtificialNeuronSecondaryTest {
     private static final int NUM_INPUTS = 3;
     private static final double DELTA = 0.0001;
 
+    /*
+     * Tests for updateWeights
+     */
     @Test
     public void testUpdateWeights() {
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
@@ -64,6 +67,9 @@ public class SimpleArtificialNeuronSecondaryTest {
         assertArrayEquals(initialWeights, neuron.getWeights(), DELTA); // Weights should remain unchanged
     }
 
+    /*
+     * Tests for toString
+     */
     @Test
     public void testToString() {
         SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
@@ -76,6 +82,30 @@ public class SimpleArtificialNeuronSecondaryTest {
         assertEquals(expectedString, neuron.toString());
     }
 
+    @Test
+    public void testToStringZeroInputs() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(0);
+
+        String expectedString = "SimpleArtificialNeuron: {weights: [], bias: 0.0}";
+        assertEquals(expectedString, neuron.toString());
+    }
+
+    @Test
+    public void testToStringAfterClear() {
+        SimpleArtificialNeuron neuron = new SimpleArtificialNeuron1(NUM_INPUTS);
+        double[] weights = { 0.2, 0.4, 0.6 };
+        double bias = 0.8;
+        neuron.setWeights(weights);
+        neuron.setBias(bias);
+        neuron.clear();
+
+        String expectedString = "SimpleArtificialNeuron: {weights: [0.0, 0.0, 0.0], bias: 0.0}";
+        assertEquals(expectedString, neuron.toString());
+    }
+
+    /*
+     * Tests for equals
+     */
     @Test
     public void testEquals() {
         SimpleArtificialNeuron1 neuron1 = new SimpleArtificialNeuron1(

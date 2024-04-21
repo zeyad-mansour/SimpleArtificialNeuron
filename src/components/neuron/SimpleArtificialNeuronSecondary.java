@@ -8,6 +8,10 @@ package components.neuron;
  */
 public abstract class SimpleArtificialNeuronSecondary
         implements SimpleArtificialNeuron {
+
+    private static final int NUM_INPUTS = 3;
+    private static final double DELTA = 0.0001;
+
     @Override
     public void updateWeights(double learningRate, double error,
             double[] inputs) {

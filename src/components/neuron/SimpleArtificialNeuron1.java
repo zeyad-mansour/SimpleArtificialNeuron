@@ -68,7 +68,7 @@ public class SimpleArtificialNeuron1 extends SimpleArtificialNeuronSecondary {
 
     @Override
     public double[] getWeights() {
-        // Create a copy of the weights array to avoid exposing the internal representation
+        // Create a copy of the weights array to avoid exposing internal representation
         double[] copy = new double[this.weights.length];
         System.arraycopy(this.weights, 0, copy, 0, this.weights.length);
         return copy;
